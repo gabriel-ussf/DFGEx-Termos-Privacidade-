@@ -1,0 +1,14 @@
+:root{
+  --bg:#080b10;--panel:#10151d;--panel2:#0d1118;--text:#edf1f7;--muted:#9ba6b5;
+  --line:#202936;--accent:#d8b46a;--accent2:#f0d391;--max:1080px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;line-height:1.7}
+.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:5;background:rgba(8,11,16,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:10px;align-items:center;font-weight:800;letter-spacing:.4px}.crest{display:grid;place-items:center;width:35px;height:35px;border:1px solid #6e5b36;border-radius:9px;color:var(--accent);font-size:11px}
+nav{display:flex;gap:24px}nav a{color:var(--muted);text-decoration:none;font-size:14px}nav a:hover{color:var(--text)}
+.hero{padding:110px 0 75px}.badge,.eyebrow{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:1.8px}.hero h1{font-size:clamp(42px,7vw,78px);line-height:1.02;max-width:900px;margin:18px 0}.hero h1 span{color:var(--accent)}.hero p{max-width:760px;color:var(--muted);font-size:18px}.actions{display:flex;gap:12px;margin-top:30px}.button{display:inline-block;padding:11px 18px;border:1px solid var(--line);border-radius:10px;color:var(--text);text-decoration:none}.button.primary{background:var(--accent);border-color:var(--accent);color:#17130b;font-weight:800}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding-bottom:80px}.cards article{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px}.cards p{color:var(--muted);margin-bottom:0}
+.document{padding:80px 0;border-top:1px solid var(--line)}.document h2{font-size:42px;line-height:1.1;margin:10px 0}.document h3{margin-top:38px;font-size:19px}.document p{color:#c4ccd7;max-width:850px}.lead{color:var(--muted)!important}.privacy{background:var(--panel2);max-width:none}.privacy .wrap{padding-top:10px;padding-bottom:30px}.final{padding:85px 0}.final h2{font-size:36px}.final p{color:var(--muted);max-width:700px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:13px}
+@media(max-width:720px){nav{gap:10px}.cards{grid-template-columns:1fr}.hero{padding-top:75px}.document h2{font-size:32px}.wrap{width:min(var(--max),calc(100% - 28px))}}
